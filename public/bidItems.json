@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "title": "Antique Pocket Watch",
+      "description": "Silver mechanical pocket watch from the early 1900s, beautifully engraved.",
+      "currentBidPrice": 150.75,
+      "timeLeft": "3h 50m",
+      "bidsCount": 18,
+      "image": "https://i.ibb.co.com/j99HtyPG/Antique-Pocket-Watch.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Antique Typewriter",
+      "description": "Classic Remington portable typewriter, still fully functional.",
+      "currentBidPrice": 95.00,
+      "timeLeft": "1d 1h",
+      "bidsCount": 10,
+      "image": "https://i.ibb.co.com/b9VZkMP/Antique-Typewriter.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Antique Globe Bar",
+      "description": "Rotating wooden globe bar from 1950s Italy, elegant and rare.",
+      "currentBidPrice": 320.00,
+      "timeLeft": "2d 8h",
+      "bidsCount": 5,
+      "image": "https://i.ibb.co.com/hx809Hz2/Antique-Globe-Bar.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Victorian Oil Lamp",
+      "description": "Glass oil lamp from the Victorian era with floral etching.",
+      "currentBidPrice": 70.00,
+      "timeLeft": "5h 20m",
+      "bidsCount": 6,
+      "image": "https://i.ibb.co.com/ycPPndCv/Victorian-Oil-Lamp.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Antique Wall Clock",
+      "description": "Wooden pendulum wall clock from early 1900s, still ticking.",
+      "currentBidPrice": 185.00,
+      "timeLeft": "6h 45m",
+      "bidsCount": 8,
+      "image": "https://i.ibb.co.com/BK21YMg5/Antique-Wall-Clock.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Old Camera (Kodak Retina)",
+      "description": "1940s Kodak Retina rangefinder camera, pristine condition.",
+      "currentBidPrice": 210.00,
+      "timeLeft": "9h 30m",
+      "bidsCount": 11,
+      "image": "https://i.ibb.co.com/XrkGqLck/Old-Camera-Kodak-Retina.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Antique Telephone",
+      "description": "Brass rotary dial telephone, decorative and collectible.",
+      "currentBidPrice": 140.00,
+      "timeLeft": "12h 10m",
+      "bidsCount": 14,
+      "image": "https://i.ibb.co.com/N2KwrCdv/Antique-Telephone.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Antique Gramophone",
+      "description": "Vintage horn-style gramophone, plays 78 RPM records.",
+      "currentBidPrice": 275.00,
+      "timeLeft": "14h 50m",
+      "bidsCount": 13,
+      "image": "https://i.ibb.co.com/C3W1R1Dc/Antique-Gramophone.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Antique Sewing Machine",
+      "description": "Cast iron hand-crank Singer sewing machine with gold detailing.",
+      "currentBidPrice": 230.00,
+      "timeLeft": "1d 7h",
+      "bidsCount": 9,
+      "image": "https://i.ibb.co.com/Qvf0rmFL/Antique-Sewing-Machine.jpg"
+    }
+]
+  
