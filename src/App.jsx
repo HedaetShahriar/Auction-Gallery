@@ -20,7 +20,7 @@ function App() {
   }
   const removeFavorite = (title) =>{
     toast.warn(title + " removed from favorites", {
-      position: "bottom-right",
+      position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,

@@ -6,18 +6,17 @@ import { FaRegHeart,FaHeart } from "react-icons/fa";
 import FavoriteItem from './FavoriteItem.jsx';
 
 const ActiveAuctions = ({addFavorite,removeFavorite}) => {
+    
+    const [favoriteId, setFavoriteId] = useState([]);
     const [totalBId, setTotalBid] = useState(0);
-    const handleTotalBid = (bid) => {
-        setTotalBid(totalBId + bid);
-    }
-
     const [favorites, setFavorites] = useState([]);
+
     const handleFavorite = (item) => {
-        handleTotalBid(item.currentBidPrice);
+        setTotalBid(totalBId + item.currentBidPrice);
         setFavorites([...favorites, item]);
         addFavorite(item.title);
+        setFavoriteId([...favoriteId, item.id]);
     }
-    // const [closeBtnStatus, setCloseBtnStatus] = useState(false);
     const handleClose = (id) => {
         const newFavorites = favorites.filter(item => item.id !== id);      
         setFavorites(newFavorites);
@@ -26,7 +25,8 @@ const ActiveAuctions = ({addFavorite,removeFavorite}) => {
             setTotalBid(totalBId - item.currentBidPrice);
         }
         removeFavorite(item.title);
-        // setCloseBtnStatus(true);
+        const newFavoriteId = favoriteId.filter(item => item !== id);
+        setFavoriteId(newFavoriteId);
     }
 
     const [items, setItems] = useState([]);
@@ -37,6 +37,7 @@ const ActiveAuctions = ({addFavorite,removeFavorite}) => {
                 setItems(data);
             });
     }, []);
+    
     return (
         <div className='container mx-auto py-12 md:py-14 lg:py-20 px-2.5'>
             <h1 className='text-[#0E2954] font-medium text-center md:text-left text-3xl'>Active Auctions</h1>
@@ -53,9 +54,12 @@ const ActiveAuctions = ({addFavorite,removeFavorite}) => {
                                 <th>Bid Now</th>
                             </tr>
                         </thead>
-                        {
-                            items.map((item) => <Item handleFavorite={handleFavorite} key={item.id} item={item}></Item>)
-                        }
+                        <tbody>
+                            {
+                                items.map((item) => <Item handleFavorite={handleFavorite} isFavorite={favoriteId.includes(item.id)} key={item.id} item={item}></Item>)
+                                
+                            }
+                        </tbody>
                     </table>
                 </div>
                 {/* favorite items */}
